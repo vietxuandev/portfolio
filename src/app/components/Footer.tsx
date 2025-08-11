@@ -8,18 +8,10 @@ import {
   Typography,
 } from "@mui/material";
 import NextLink from "next/link";
-import { Icon } from "./Icon";
-import { useEffect, useState } from "react";
 import { MENU_ITEMS } from "../constants";
+import { Icon } from "./Icon";
 
-interface FooterProps extends ContainerProps {}
-
-export function Footer({ sx, ...props }: FooterProps) {
-  const [activeHash, setActiveHash] = useState("#home");
-
-  useEffect(() => {
-    setActiveHash(window.location.hash || "#home");
-  }, []);
+export function Footer({ sx, ...props }: ContainerProps) {
   return (
     <Container
       component="footer"
