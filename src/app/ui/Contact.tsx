@@ -76,14 +76,14 @@ export function Contact() {
               <TextField
                 variant="standard"
                 fullWidth
-                label="Your name"
+                label="Your email"
                 slotProps={{
                   inputLabel: {
                     shrink: true,
                   },
                 }}
-                id="name"
-                placeholder="Name"
+                id="email"
+                placeholder="Email"
               />
             </Grid>
             <Grid size={12}>
