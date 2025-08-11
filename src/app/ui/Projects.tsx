@@ -1,13 +1,6 @@
-import {
-  Box,
-  Container,
-  Typography,
-  Stack,
-  Button,
-  Grid,
-  Card,
-} from "@mui/material";
+import { Box, Container, Typography, Stack, Button, Grid } from "@mui/material";
 import Image from "next/image";
+import { Card } from "../components";
 
 export function Projects() {
   return (
