@@ -1,5 +1,6 @@
 "use client";
 import { alpha, createTheme } from "@mui/material/styles";
+import Link from "next/link";
 
 const theme = createTheme({
   shape: {
@@ -69,6 +70,9 @@ const theme = createTheme({
             color: "#00ADB5",
           },
         },
+      },
+      defaultProps: {
+        component: Link,
       },
     },
     MuiIconButton: {

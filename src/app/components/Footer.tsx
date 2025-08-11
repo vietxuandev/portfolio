@@ -7,7 +7,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import NextLink from "next/link";
+import Link from "next/link";
 import { MENU_ITEMS } from "../constants";
 import { Icon } from "./Icon";
 
@@ -26,7 +26,7 @@ export function Footer({ sx, ...props }: ContainerProps) {
         {MENU_ITEMS.map((item) => (
           <Button
             key={item.href}
-            component={NextLink}
+            component={Link}
             href={item.href}
             {...(item.icon && { startIcon: <Icon name={item.icon} /> })}
           >

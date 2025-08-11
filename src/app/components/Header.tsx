@@ -10,7 +10,6 @@ import {
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import NextLink from "next/link";
 import { cloneElement, useEffect, useState } from "react";
 import { MENU_ITEMS } from "../constants";
 
@@ -65,7 +64,7 @@ export function Header(props: Props) {
               justifyContent="space-between"
               alignItems="center"
             >
-              <Link component={NextLink} href="#home">
+              <Link href="#home">
                 <Typography variant="h6" color="textPrimary" fontWeight="bold">
                   My Portfolio
                 </Typography>
@@ -74,7 +73,6 @@ export function Header(props: Props) {
                 {MENU_ITEMS.map((item) => (
                   <Link
                     key={item.href}
-                    component={NextLink}
                     href={item.href}
                     className={activeHash === item.href ? "active" : ""}
                     onClick={() => setActiveHash(item.href)}
