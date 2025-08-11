@@ -20,7 +20,7 @@ const theme = createTheme({
     },
     background: {
       default: "#222831",
-      paper: "rgba(57, 62, 70, 0.5)",
+      paper: alpha("#393E46", 0.5),
     },
     divider: alpha("#EEEEEE", 0.1),
   },
@@ -124,11 +124,11 @@ const theme = createTheme({
     fontFamily: "var(--font-poppins)",
     body1: {
       fontSize: "18px",
-      lineHeight: "27px",
+      lineHeight: "1.5",
     },
     h2: {
       fontSize: "64px",
-      lineHeight: "96px",
+      lineHeight: "1.5",
     },
   },
 });
