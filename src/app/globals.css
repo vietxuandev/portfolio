@@ -1,0 +1,6 @@
+:root {
+  --font-poppins: var(--font-poppins);
+  --font-oswald: var(--font-oswald);
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+}
